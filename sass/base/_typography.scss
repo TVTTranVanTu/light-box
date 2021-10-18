@@ -1,16 +1,51 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
-.container{
+.container {
     width: 1000px;
     margin: 0 auto;
 }
-ul{
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-a{
+a {
     text-decoration: none;
+}
+.text-bold {
+    font-weight: 900;
+}
+.light__box {
+    background-color: $color-gray;
+    &-content {
+        background-color: $color-gray-light;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    &-right {
+        padding-right: 30px;
+    }
+    &-right-content {
+        .box-infor {
+            p {
+                font-size: 13px;
+                line-height: 20px;
+                color: #645a56;
+                font-family: "Arial";
+            }
+            .list-infor {
+                display: flex;
+                flex-wrap: wrap;
+                width: 60%;
+                .infor-item {
+                    width: 50%;
+                    span {
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
 }
