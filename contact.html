@@ -67,43 +67,52 @@
       <div class="container">
         <div class="light__box-content">
           <div class="light__box-left"></div>
-          <div class="light_box-right">
+          <div class="light__box-right">
             <div class="light__box-right-content">
               <div class="form-contact">
-                <h2>Contact Us</h2>
+                <h1 class="form__title">Contact Us</h1>
+                <hr />
                 <div class="box-infor">
                   <p>
                     Reach us by completing the form below to send an email message, or use any of
                     these details:
                   </p>
                   <ul class="list-infor">
-                    <li class="infor-item">Phone:<span>+555 555 9555 </span></li>
-                    <li class="infor-item">Skype:<span>Lightbox </span></li>
-                    <li class="infor-item">Fax:<span>+555 555 9555 </span></li>
-                    <li class="infor-item">Twitter:<span>@lightbox </span></li>
+                    <li class="infor-item">
+                      <p><span class="text-bold">Phone:</span>+555 555 9555</p>
+                    </li>
+                    <li class="infor-item">
+                      <p><span class="text-bold"> Skype:</span>Lightbox</p>
+                    </li>
+                    <li class="infor-item">
+                      <p><span class="text-bold">Fax:</span>+555 555 9555</p>
+                    </li>
+                    <li class="infor-item">
+                      <p><span class="text-bold">Twitter: </span>@lightbox</p>
+                    </li>
                   </ul>
                 </div>
-                <div class="form-box">
-                  <div class="input-box w50">
-                    <label>Name</label>
-                    <input type="text" name="" required />
+                <form class="form">
+                  <div class="form__group">
+                    <label for="name" class="form__label">Name</label>
+                    <input id="name" type="text" class="form__input" required />
                   </div>
-                  <div class="input-box w50">
-                    <label>Email</label>
-                    <input type="text" name="" required />
+                  <div class="form__group">
+                    <label for="email" class="form__label">Email</label>
+                    <input id="email" type="email" class="form__input" required />
                   </div>
-                  <div class="input-box w50">
-                    <label>Phone</label>
-                    <input type="text" name="" required />
+                  <div class="form__group">
+                    <label for="phone" class="form__label">Phone</label>
+                    <input id="name" type="text" class="form__input" required />
                   </div>
-                  <label>message</label>
-                  <div class="input-box w100">
-                    <textarea name="" required></textarea>
+                  <div class="form__group">
+                    <label for="message" class="form__label">Message</label>
+                    <textarea class="form__input form__textarea"></textarea>
                   </div>
-                  <div class="input-box w100">
-                    <input type="submit" value="submit" />
+                  <div class="form__group bottom-group">
+                    <button class="btn btn--gray">Submit</button>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
