@@ -1,0 +1,25 @@
+.footer {
+    background-color: $color-brown-light;
+    &__content {
+        background-color: $color-brown;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    &__logo-box {
+        background-color: $color-brown-dark;
+        text-align: center;
+    }
+    &__text,
+    &__copyright {
+        font-size: 11px;
+        color: #a68a7d;
+        font-family: "Arial";
+        text-transform: uppercase;
+        padding-left: 40px;
+        line-height: 1.8;
+        span {
+            color: #ccc9c8;
+        }
+    }
+}

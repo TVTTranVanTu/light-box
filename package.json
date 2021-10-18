@@ -6,7 +6,7 @@
   "author": "Tran Van Tu",
   "license": "MIT",
   "scripts": {
-    "node-sass":"node-sass sass/main.scss css/style.css -w"
+    "sasstocss":"node-sass sass/main.scss css/style.css -w"
   },
   "devDependencies": {
     "node-sass": "^4.12.0"
