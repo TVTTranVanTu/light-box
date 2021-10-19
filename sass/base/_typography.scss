@@ -23,26 +23,153 @@ a {
         background-color: $color-gray-light;
         display: grid;
         grid-template-columns: 1fr 2fr;
+        padding-bottom: 100px;
     }
     &-right {
         padding-right: 30px;
-    }
-    &-right-content {
-        .box-infor {
-            p {
-                font-size: 13px;
-                line-height: 20px;
-                color: #645a56;
-                font-family: "Arial";
+        &-content {
+            .box-infor {
+                p {
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #645a56;
+                    font-family: "Arial";
+                }
+                .list-infor {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 60%;
+                    .infor-item {
+                        width: 50%;
+                        span {
+                            width: 30%;
+                        }
+                    }
+                }
             }
-            .list-infor {
-                display: flex;
-                flex-wrap: wrap;
-                width: 60%;
-                .infor-item {
-                    width: 50%;
-                    span {
-                        width: 30%;
+        }
+        &-top {
+            display: flex;
+            border-bottom: 2px solid #cec5c0;
+            padding-bottom: 40px;
+            padding-top: 20px;
+        }
+        &-list {
+            width: 65%;
+            box-sizing: border-box;
+            padding-right: 40px;
+            .list-title {
+                font-size: 41px;
+                line-height: 34px;
+                color: #2f231e;
+                font-family: "Duepuntozero";
+            }
+            .list-work {
+                margin-top: 40px;
+                .work-item {
+                    display: flex;
+                    &_content {
+                        padding: 0 30px;
+                    }
+                    &_title {
+                        font-size: 30px;
+                        line-height: 34px;
+                        color: #745459;
+                        font-family: "Duepuntozero";
+                        letter-spacing: 1px;
+                        margin-top: 5px;
+                    }
+                    &_text {
+                        font-size: 13px;
+                        width: 265px;
+                        line-height: 20px;
+                        color: #645a56;
+                        font-family: "Arial";
+                    }
+                }
+            }
+        }
+        &-review {
+            width: 35%;
+            .box__review {
+                &-content {
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: #7f6357;
+                    font-style: italic;
+                    font-family: "Georgia";
+                    background-color: #ebe7e4;
+                    padding: 20px;
+                    padding-bottom: 140px;
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 83%, 64% 75%, 0% 75%);
+                }
+            }
+            .reviewer__info {
+                font-size: 15px;
+                color: #2f231e;
+                font-family: "Arial";
+                font-weight: bold;
+                text-align: right;
+                margin-right: 15px;
+                margin-top: -105px;
+            }
+            .reviewer__title {
+                text-transform: uppercase;
+                font-size: 10px;
+                color: #7f6357;
+                margin-top: 3px;
+            }
+        }
+        &-bottom {
+            .recent__work {
+                &-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                &-title {
+                    font-size: 41px;
+                    line-height: 34px;
+                    color: #2f231e;
+                    font-family: "Duepuntozero";
+                }
+                &-list {
+                    display: flex;
+                }
+                &-content {
+                    .image-title {
+                        font-size: 13px;
+                        color: #4e4d4d;
+                        font-weight: 500;
+                        font-style: italic;
+                        font-family: "Arial";
+                        text-align: right;
+                        margin-top: 20px;
+                    }
+                }
+                &-item {
+                    box-sizing: border-box;
+                    background-color: #6b5359;
+                    border-radius: 50%;
+                    margin-left: 20px;
+                    width: 30px;
+                    padding-top: 5px;
+                    color: #ffffff;
+                    height: 30px;
+                    text-align: center;
+                }
+                &-item.active {
+                    background-color: #a37a7e;
+                }
+                &-image {
+                    width: 100%;
+                    border: 1px solid #cec5c0;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        vertical-align: middle;
                     }
                 }
             }
