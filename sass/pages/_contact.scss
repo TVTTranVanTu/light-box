@@ -5,3 +5,41 @@
         margin-left: 20px;
     }
 }
+
+.contact-page {
+    .form-contact {
+        @include respond(tab-land) {
+            padding: 0 50px;
+        }
+        .box-infor {
+            p {
+                @include respond(phone-se) {
+                    font-size: 15px;
+                }
+            }
+        }
+        .list-infor {
+            width: 100%;
+            @include respond(phone-se) {
+                display: block;
+            }
+            .infor-item {
+                @include respond(phone-se) {
+                    width: 100%;
+                    margin: 10px 0;
+                }
+                p {
+                    @include respond(phone-pl) {
+                        font-size: 10px;
+                    }
+                    @include respond(phone-se) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .form {
+            width: 100%;
+        }
+    }
+}

@@ -28,6 +28,9 @@
     }
     &__textarea {
         height: 200px;
+        @include respond(phone-se) {
+            height: 100px;
+        }
     }
     .bottom-group {
         text-align: right;
