@@ -93,7 +93,8 @@ a {
       @media (max-width: 600px) {
         .light__box-right-top {
           display: block;
-          padding: 20px; } }
+          padding: 20px;
+          padding-top: 50px; } }
     .light__box-right-list {
       width: 65%;
       box-sizing: border-box;
@@ -335,7 +336,8 @@ a {
     align-items: center; }
     @media (max-width: 600px) {
       .header__content {
-        height: 100px; } }
+        height: 100px;
+        grid-template-columns: 1fr 1fr; } }
   .header__logo-link {
     position: relative;
     display: flex; }
@@ -366,7 +368,8 @@ a {
       border-right-color: #a68a7d; }
       @media (max-width: 600px) {
         .header__logo-title-main {
-          font-size: 32px; } }
+          font-size: 36px;
+          padding-right: 20px; } }
     .header__logo-title-sub {
       font-size: 18px;
       line-height: 15px;
@@ -379,7 +382,7 @@ a {
       @media (max-width: 600px) {
         .header__logo-title-sub {
           font-size: 14px;
-          left: -30px; } }
+          left: -55px; } }
   .header__text-box {
     width: 70%;
     font-size: 18px;
@@ -387,6 +390,9 @@ a {
     color: #a68a7d;
     font-family: "Helvetica";
     margin-bottom: 50px; }
+    @media (max-width: 600px) {
+      .header__text-box {
+        width: 100%; } }
     .header__text-box .paragraph {
       margin: 0; }
       @media (max-width: 600px) {
@@ -394,6 +400,13 @@ a {
           display: none; } }
     .header__text-box .btn-text {
       color: #ffffff; }
+      @media (max-width: 320px) {
+        .header__text-box .btn-text {
+          font-size: 10px; } }
+
+@media only screen and (min-width: 600px) {
+  .navigation__beger {
+    display: none; } }
 
 .footer {
   background-color: #3b2c25; }
@@ -445,14 +458,12 @@ a {
   height: 50px; }
   .navigation__checkbox {
     display: none; }
-  .navigation__checkbox:checked ~ .navigation__background {
-    transform: scale(80); }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
     width: 100%; }
   .navigation__button {
-    height: 7rem;
-    width: 7rem;
+    height: 4rem;
+    width: 4rem;
     position: absolute;
     top: -5px;
     right: 0;
@@ -463,9 +474,9 @@ a {
     position: relative;
     margin-top: 3.2rem; }
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-      width: 3.5rem;
+      width: 2rem;
       height: 0.3rem;
-      background-color: red;
+      background-color: #ffffff;
       display: inline-block; }
     .navigation__icon::before, .navigation__icon::after {
       content: "";
@@ -488,6 +499,41 @@ a {
   .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
     top: 0;
     transform: rotate(-135deg); }
+  .navigation__nav {
+    height: 100vh;
+    background-color: #362721;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s; }
+  .navigation__list-1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: left; }
+  .navigation__item-1 {
+    margin: 1rem; }
+  .navigation__link-1:link, .navigation__link-1:visited {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-size: 252%;
+    transition: all 0.4s; }
+  .navigation__link-1:hover, .navigation__link-1:active {
+    background-position: 100%;
+    color: #fff;
+    transform: translateX(1rem); }
   .navigation__list {
     display: flex;
     justify-content: flex-end;

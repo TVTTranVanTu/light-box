@@ -9,6 +9,7 @@
         align-items: center;
         @include respond(phone) {
             height: 100px;
+            grid-template-columns: 1fr 1fr;
         }
     }
     &__logo-box {
@@ -44,7 +45,8 @@
             border-right-style: groove;
             border-right-color: #a68a7d;
             @include respond(phone) {
-                font-size: 32px;
+                font-size: 36px;
+                padding-right: 20px;
             }
         }
         &-sub {
@@ -58,7 +60,7 @@
             bottom: -20px;
             @include respond(phone) {
                 font-size: 14px;
-                left: -30px;
+                left: -55px;
             }
         }
     }
@@ -69,6 +71,9 @@
         color: #a68a7d;
         font-family: "Helvetica";
         margin-bottom: 50px;
+        @include respond(phone) {
+            width: 100%;
+        }
         .paragraph {
             margin: 0;
             @include respond(phone) {
@@ -77,6 +82,15 @@
         }
         .btn-text {
             color: #ffffff;
+            @include respond(phone-se) {
+                font-size: 10px;
+            }
         }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .navigation__beger {
+        display: none;
     }
 }
