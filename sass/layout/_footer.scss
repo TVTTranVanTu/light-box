@@ -5,10 +5,26 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
+        @include respond(phone) {
+            width: 100%;
+            display: block;
+        }
     }
     &__logo-box {
         background-color: $color-brown-dark;
         text-align: center;
+        @include respond(phone) {
+            text-align: inherit;
+        }
+    }
+    &__logo-image {
+        padding-left: 30px;
+    }
+    &__text {
+        @include respond(phone) {
+            border-bottom: 1px solid #cec5c0;
+            border-bottom-style: outset;
+        }
     }
     &__text,
     &__copyright {
@@ -18,6 +34,18 @@
         text-transform: uppercase;
         padding-left: 40px;
         line-height: 1.8;
+        @include respond(tab-port) {
+            font-size: 9px;
+        }
+        @include respond(phone) {
+            padding: 10px;
+            padding-left: 40px;
+            font-size: 15px;
+            letter-spacing: 0.2px;
+        }
+        @include respond(phone-se) {
+            font-size: 13px;
+        }
         span {
             color: #ccc9c8;
         }
