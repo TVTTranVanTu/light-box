@@ -7,12 +7,14 @@
         background-color: #362721;
         height: 210px;
         align-items: center;
+        @include respond(tab-port) {
+            height: 150px;
+            grid-template-columns: 2fr 3fr;
+        }
         @include respond(phone) {
             height: 100px;
             grid-template-columns: 1fr 1fr;
         }
-    }
-    &__logo-box {
     }
     &__logo-link {
         position: relative;
@@ -21,17 +23,24 @@
     &__logo-image {
         margin-top: -150px;
         margin-left: -100px;
+        @include respond(tab-port) {
+            height: 350px;
+            width: 350px;
+        }
         @include respond(phone) {
             height: 250px;
             width: 250px;
             margin-top: -100px;
-            margin-left: -50px;
+            margin-left: -70px;
         }
     }
     &__logo-title {
         position: absolute;
         top: 30%;
         right: 0;
+        @include respond(tab-port) {
+            top: 20%;
+        }
         @include respond(phone) {
             top: 20px;
         }
@@ -76,6 +85,9 @@
         }
         .paragraph {
             margin: 0;
+            @include respond(tab-port) {
+                display: none;
+            }
             @include respond(phone) {
                 display: none;
             }
