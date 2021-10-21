@@ -1,8 +1,18 @@
 .header__content.contact-page {
     height: 80px;
+
     .header__logo-image {
         margin-top: -50px;
         margin-left: 20px;
+        @include respond(tab-port) {
+            width: 200px;
+            height: 200px;
+        }
+        @include respond(phone) {
+            width: 200px;
+            height: 200px;
+            margin-left: 0;
+        }
     }
 }
 

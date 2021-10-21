@@ -54,7 +54,7 @@ a {
     }
     &-right {
         padding-right: 30px;
-        padding-top: 20px;
+        padding-top: 40px;
         @include respond(tab-port) {
             padding-right: 0;
             width: 100%;
@@ -146,6 +146,7 @@ a {
                             font-size: 40px;
                         }
                         @include respond(phone-se) {
+                            margin-top: 10px;
                             font-size: 24px;
                         }
                     }
@@ -153,6 +154,9 @@ a {
                         img {
                             @include respond(phone) {
                                 width: 70px;
+                            }
+                            @include respond(phone-se) {
+                                width: 50px;
                             }
                         }
                     }
