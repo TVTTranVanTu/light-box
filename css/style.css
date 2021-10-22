@@ -268,7 +268,8 @@ a {
       padding-top: 5px;
       color: #ffffff;
       height: 30px;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
       @media (max-width: 600px) {
         .light__box-right-bottom .recent__work-item {
           width: 25px;
@@ -317,6 +318,18 @@ a {
         height: 100px; } }
   .form .bottom-group {
     text-align: right; }
+  .form input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    font-size: 15px;
+    box-sizing: border-box; }
+  .form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    font-size: 15px;
+    box-sizing: border-box; }
 
 .btn {
   text-transform: uppercase;
@@ -324,7 +337,8 @@ a {
   font-size: 11px;
   line-height: 20px;
   color: #30241f;
-  font-family: "Arial"; }
+  font-family: "Arial";
+  cursor: pointer; }
   .btn--gray {
     border: 1px solid #645a56;
     background-color: #cdc4be; }
@@ -444,7 +458,8 @@ a {
       .footer__logo-box {
         text-align: inherit; } }
   .footer__logo-image {
-    padding-left: 30px; }
+    padding-left: 30px;
+    cursor: pointer; }
   @media (max-width: 600px) {
     .footer__text {
       border-bottom: 1px solid #cec5c0;
