@@ -19,6 +19,7 @@
     }
     &__logo-image {
         padding-left: 30px;
+        cursor: pointer;
     }
     &__text {
         @include respond(phone) {

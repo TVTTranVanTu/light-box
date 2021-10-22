@@ -300,6 +300,7 @@ a {
                     color: #ffffff;
                     height: 30px;
                     text-align: center;
+                    cursor: pointer;
                     @include respond(phone) {
                         width: 25px;
                         height: 25px;
